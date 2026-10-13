@@ -18,7 +18,7 @@
 const PISTES = {
 
   /* ── Unitat 1 · Matrius ──────────────────────────────────────────────── */
-  'u1/12': 'Abans de calcular, simplifica l\'expressió com si A, B i C fossin lletres: treu parèntesis, vigila els signes i agrupa. Et quedarà una combinació del tipus aA + bB + cC, i llavors només has de multiplicar cada matriu pel seu nombre i sumar element a element.',
+  'u1/12': 'La segona operació es pot simplificar fent aquest pas previ: (-2)(A-C) - 3(B+2C) = -2A+2C-3B-6C = -2A-3B-4C',
   'u1/13': 'Una matriu fila 1×3 per una matriu columna 3×1 dona una matriu 1×1, és a dir, un sol nombre: multiplica els elements que ocupen la mateixa posició i suma els tres productes. Els nombres que multipliquen (2, 5 i 3) els pots deixar per al final.',
   'u1/15': 'Comença per les dimensions, sense fer cap càlcul: el producte d\'una matriu 2×2 per una de 2×3 dona una matriu 2×3, i només es poden sumar matrius de la mateixa dimensió. Després comprova-ho fent primer el producte, multiplicant pels nombres i, finalment, sumant.',
   'u1/16': 'Per saber si commuten, calcula AB i BA per separat i compara-les: n\'hi ha prou que un sol element sigui diferent. Per a la propietat distributiva, calcula els dos costats per separat: a l\'esquerra suma primer B + C i després multiplica per A; a la dreta fes AB i AC i suma\'ls.',
@@ -98,7 +98,7 @@ const PISTES = {
 
   /* ── Unitat 7 · Límits i continuïtat ─────────────────────────────────── */
   'u7/40': 'A cada punt de canvi de tros, iguala el límit per l\'esquerra amb el límit per la dreta (i amb el valor que dona la fórmula en aquell punt): cada punt et dona una equació. Resol el sistema resultant per trobar a i b.',
-  'u7/43': 'Bolzano parla d\'arrels, o sigui de valors on la funció val 0. Reescriu-ho: defineix g(x) = f(x) − 1 i busca-hi dos punts amb signes contraris. L\'exponencial és contínua a tot ℝ, o sigui que g també ho és.',
+  'u7/43': 'Defineix g(x) = f(x) − 1 i troba dos valors "a" i "b" tals que f(a) i f(b) tinguin signe contrari. Podràs aplicar Bolzano perquè la funció "f" és contínua a tot ℝ - ja que és suma d\'una exponencial i d\'una polinòmica - i per tant "g" també és contínua a tot ℝ.',
   'u7/44': 'Mira cada gràfica per separat a la banda dreta (x → +∞) i a l\'esquerra (x → −∞): la corba s\'apropa a una alçada fixa (asímptota horitzontal), puja o baixa sense parar, o no s\'estabilitza? No cal calcular res, només llegir el dibuix.',
   'u7/45': 'Pensa en qui "guanya" quan x es fa molt gran: una exponencial d\'una base més gran que 1 creix molt més de pressa que qualsevol potència de x, i una arrel creix més a poc a poc que allò que hi ha a dins. Simplifica quedant-te només amb els termes que realment dominen.',
   'u7/46': 'Compara el grau del numerador amb el del denominador: si són iguals, el límit és el quocient dels coeficients del terme de grau més alt; si el numerador té grau més gran, dona infinit; si en té menys, dona 0. Per al signe a −∞, vigila si les potències són parelles o senars.',
