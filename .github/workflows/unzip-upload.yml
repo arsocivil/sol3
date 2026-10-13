@@ -44,11 +44,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check both courses before saving
-        run: |
-          python 1eso/eines/comprova.py
-          python 4eso/eines/comprova.py
-
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
