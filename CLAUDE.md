@@ -55,6 +55,25 @@ Vegeu `README.md` i `TODO.md`.
 
 - Clau `'uN/número'`. Apòstrofs escapats (`d\'una`) o tipogràfics (’).
 - Orienten cap al mètode o el concepte clau; no donen el resultat numèric ni el pas final.
+- **Format.** La pista es mostra com a HTML (`innerHTML` a `tasca.html`): només s'hi poden fer servir
+  `<i>`, `<b>` i `<br>`. Cap altre `<` (un `<` perdut fa desaparèixer part del text). No s'hi pinten
+  fórmules `$...$`: les expressions s'escriuen en text pla.
+- **`<i>` per a la notació matemàtica**: paràmetres, variables, funcions i punts (*a*, *b*, *m*, *f(a)*, *x=1*,
+  *g*). No per a nombres sols ni per a text corrent.
+- **`<b>` gairebé mai**: només per ressaltar de debò una paraula o un avís («**Atenció**», «**normal**»).
+  El professor no abusa de la negreta.
+- **`<br>` separa els passos** de la pista. Una pista és una sola línia de `hints.js`: no s'hi posa cap
+  salt de línia real.
+- **Estil del professor** (és el model per a qualsevol pista nova o revisada): senzill, directe i pedagògic.
+  Segona persona del singular («Calcula», «Fixa't»). Seqüència clara: *primer… després… finalment…*, un pas
+  per línia. Verbs d'acció. Sense frases llargues ni to de màquina. Escurça sempre que es pugui.
+  Signe menys «−», no el guionet.
+- Les pistes que el professor ha escrit a mà (tota la unitat 8 i `u7/40`, `u7/43`, `u7/44`) no es
+  reescriuen si ell no ho demana.
+- **Flux de treball.** El professor edita les pistes amb l'artifact «Editor de pistes» (que parteix de
+  `hints.js`) i en copia el text complet cap a GitHub. Si Claude proposa pistes noves, les deixa com a
+  **esborranys a la base de dades de l'artifact** (col·lecció `hints`, document `uN_número`, camps
+  `key` i `text`) perquè ell les revisi; Claude no les posa a `hints.js` si no li ho demana.
 
 ## Errades del solucionari
 
